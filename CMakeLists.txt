@@ -11,10 +11,10 @@ add_compile_definitions(SPDLOG_ACTIVE_LEVEL=SPDLOG_LEVEL_TRACE)
 
 include_directories(
     ${CMAKE_SOURCE_DIR}/.
-    ${CMAKE_SOURCE_DIR}/../include/packio-2.6.0/include
-    ${CMAKE_SOURCE_DIR}/../include/asio-1.30.2/include
-    ${CMAKE_SOURCE_DIR}/../include/json-3.9.1/include
-    ${CMAKE_SOURCE_DIR}/../include/spdlog/include
+    ${CMAKE_SOURCE_DIR}/packio/include
+    ${CMAKE_SOURCE_DIR}/asio/asio/include
+    ${CMAKE_SOURCE_DIR}/json/include
+    ${CMAKE_SOURCE_DIR}/spdlog/include
 )
 
 target_link_libraries(asiotest
