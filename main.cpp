@@ -1,4 +1,6 @@
 #include <iostream>
+#include <chrono>
+#include <thread>
 
 #include <packio/packio.h>
 #include "custom_rpc/nl_json_rpc.h"
@@ -54,6 +56,9 @@ int main(int, char**)
     */
 
     thread.join();
+
+    std::cout << "Shutting down...";
+    std::this_thread::sleep_for(std::chrono::seconds(1));
 
     return 0;
 }
