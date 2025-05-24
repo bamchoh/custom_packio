@@ -59,7 +59,21 @@ The server starts, and the client calls the `add` RPC and prints the result.
 - [nlohmann/json](https://github.com/nlohmann/json)
 - [spdlog](https://github.com/gabime/spdlog)
 - [llhttp](https://github.com/nodejs/llhttp)
+- [Node.js](https://nodejs.org/) (Required for building llhttp)
+
+### Pre-build Requirements
+
+Make sure Node.js is installed on your system before building the project, as it is required to build the llhttp dependency. You can verify your Node.js installation by running:
+
+```sh
+node --version
+npm --version
+```
+
+For more detailed information about llhttp build requirements and configuration options, please refer to the [llhttp repository](https://github.com/nodejs/llhttp).
 
 ## License
 
-See each submodule for license details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+Note: The submodules included in this project are subject to their respective licenses.
