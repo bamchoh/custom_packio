@@ -40,6 +40,7 @@ int main(int, char**)
     std::cout << "Server listening on port "
               << server->acceptor().local_endpoint().port() << std::endl;
 
+    /*
     auto client = make_client(packio::net::ip::tcp::socket{io});
     client->socket().connect(server->acceptor().local_endpoint());
     std::promise<int> add1_result;
@@ -50,6 +51,7 @@ int main(int, char**)
             add1_result.set_value(r.result.get<int>());
         });
     std::cout << "42 + 24 = " << add1_result.get_future().get() << std::endl;    
+    */
 
     thread.join();
 
